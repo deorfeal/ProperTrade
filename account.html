@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="big-wrapper">
+    <header class="header" data-aos="fade-down">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo logo" href="#">
+                    <img class="logo__img" src="images/logo.svg" alt="logo">
+                </a>
+                <div class="header__wrapper">
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Products
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Testimonials
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__lang lang">
+                        <div class="lang__selected">
+                            <span>
+                                ENG
+                            </span>
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 1L6 6L1 1" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <ul class="lang__list">
+                            <li class="lang__list-item">
+                                <a class="lang__list-link" href="#">
+                                    ENG
+                                </a>
+                            </li>
+                            <li class="lang__list-item">
+                                <a class="lang__list-link" href="#">
+                                    RU
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="header__button btn" type="button">
+                        Sign In
+                    </button>
+                </div>
+                <button class="header__burger burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__account account">
+                <div class="container">
+                    <div class="account__top" data-aos="fade-down">
+                        <h1 class="account__top-title">
+                            My account
+                        </h1>
+                        <button class="account__top-btn btn" type="button">
+                            Add a review
+                        </button>
+                    </div>
+                    <div class="account__inner">
+                        <aside class="account__aside account-aside" data-aos="fade-right">
+                            <div class="account-aside__inner">
+                                <button class="account-aside__button account-aside__button--active" type="button"
+                                    id="0">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.0001 29.3334C21.6701 29.3334 26.6667 25.3334 26.6667 20C26.6667 14.6667 22.6667 12 21.3334 10.6667C19.2682 8.60156 18.7631 5.82186 18.6612 4.14165C18.6184 3.43553 17.941 2.92997 17.3316 3.28924C15.7963 4.19437 13.3186 6.27143 12 10.6667C11.1433 13.5224 12 16 12 16C12 16 10.6667 15.3334 10 13.3334C9.70656 12.4529 9.28388 11.3141 8.90263 10.315C8.58152 9.47349 7.43556 9.47956 7.14507 10.3321C6.3651 12.6212 5.33337 16.1288 5.33337 18.6667C5.33337 25.3334 10.33 29.3334 16.0001 29.3334Z"
+                                            fill="#7B839A" />
+                                    </svg>
+                                    <span>
+                                        My Orders
+                                    </span>
+                                </button>
+                                <button class="account-aside__button" type="button" id="1">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M26.6667 16C26.6667 10.109 21.8911 5.33332 16 5.33332C12.644 5.33332 9.69496 6.88465 7.75705 9.32426L9.99613 9.3177C10.7325 9.31555 11.3312 9.91075 11.3334 10.6471C11.3355 11.3835 10.7403 11.9822 10.0039 11.9844L5.41346 11.9978C5.36225 12.0009 5.31071 12.0011 5.25907 11.9983L4.67061 12C4.31632 12.001 3.97617 11.861 3.72528 11.6108C3.47439 11.3607 3.33337 11.021 3.33337 10.6667L3.33338 5.33332C3.33338 4.59694 3.93033 3.99999 4.66671 3.99999C5.40309 3.99999 6.00005 4.59694 6.00004 5.33332L6.00004 7.26595C8.41677 4.45383 11.9694 2.66666 16 2.66666C23.3638 2.66666 29.3334 8.63619 29.3334 16C29.3334 23.3638 23.3638 29.3333 16 29.3333C10.7521 29.3333 6.31452 26.3037 4.13936 21.9267C3.81164 21.2673 4.08056 20.467 4.74 20.1393C5.39943 19.8116 6.19968 20.0805 6.52739 20.7399C8.27944 24.2655 11.8247 26.6667 16 26.6667C21.8911 26.6667 26.6667 21.891 26.6667 16Z"
+                                            fill="#7B839A" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M16 9.33334C16.7363 9.33334 17.3333 9.9303 17.3333 10.6667V15.4477L19.6094 17.7239C20.1301 18.2446 20.1301 19.0888 19.6094 19.6095C19.0887 20.1302 18.2445 20.1302 17.7238 19.6095L15.4477 17.3333C14.9476 16.8332 14.6666 16.155 14.6666 15.4477V10.6667C14.6666 9.9303 15.2636 9.33334 16 9.33334Z"
+                                            fill="#7B839A" />
+                                    </svg>
+                                    <span>
+                                        History
+                                    </span>
+                                </button>
+                                <button class="account-aside__button" type="button" id="2">
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12.5985 4.37361C12.3555 5.10258 11.8009 5.67564 11.1295 6.04945C11.0251 6.10759 10.9217 6.16738 10.8194 6.22879C10.1598 6.62476 9.38536 6.81918 8.63166 6.66495L7.02929 6.33705C5.90478 6.10693 4.75918 6.6222 4.18527 7.61624L3.3573 9.05034C2.78339 10.0444 2.90995 11.2941 3.67149 12.1529L4.75819 13.3784C5.26741 13.9527 5.48749 14.7185 5.47533 15.4859C5.47342 15.6064 5.47342 15.7269 5.47533 15.8474C5.48748 16.6148 5.26741 17.3806 4.75819 17.9548L3.67149 19.1803C2.90995 20.0391 2.78339 21.2889 3.3573 22.2829L4.18527 23.717C4.75918 24.711 5.90478 25.2263 7.02929 24.9962L8.63155 24.6683C9.38526 24.5141 10.1597 24.7085 10.8193 25.1045C10.9217 25.1659 11.0251 25.2257 11.1295 25.2839C11.8009 25.6577 12.3555 26.2308 12.5985 26.9597L13.1152 28.5099C13.4782 29.5989 14.4972 30.3333 15.6451 30.3333H17.301C18.4488 30.3333 19.4679 29.5989 19.8308 28.5099L20.3476 26.9597C20.5906 26.2308 21.1452 25.6577 21.8165 25.2839C21.921 25.2257 22.0244 25.1659 22.1267 25.1045C22.7863 24.7085 23.5608 24.5141 24.3145 24.6683L25.9167 24.9962C27.0412 25.2263 28.1868 24.711 28.7607 23.717L29.5887 22.2829C30.1626 21.2889 30.036 20.0391 29.2745 19.1803L28.1879 17.9549C27.6786 17.3807 27.4586 16.6148 27.4707 15.8474C27.4726 15.7269 27.4726 15.6063 27.4707 15.4858C27.4586 14.7184 27.6786 13.9526 28.1879 13.3783L29.2745 12.1529C30.036 11.2941 30.1626 10.0444 29.5887 9.05034L28.7607 7.61624C28.1868 6.62221 27.0412 6.10693 25.9167 6.33705L24.3144 6.66494C23.5607 6.81917 22.7862 6.62475 22.1266 6.22879C22.0243 6.16738 21.921 6.10759 21.8165 6.04945C21.1452 5.67564 20.5906 5.10258 20.3476 4.37361L19.8308 2.82339C19.4679 1.73448 18.4488 1 17.301 1H15.6451C14.4972 1 13.4782 1.73448 13.1152 2.82339L12.5985 4.37361ZM20.4731 15.6667C20.4731 17.8758 18.6822 19.6667 16.4731 19.6667C14.264 19.6667 12.4731 17.8758 12.4731 15.6667C12.4731 13.4575 14.264 11.6667 16.4731 11.6667C18.6822 11.6667 20.4731 13.4575 20.4731 15.6667Z"
+                                            fill="#7B839A" />
+                                    </svg>
+                                    <span>
+                                        Settings
+                                    </span>
+                                </button>
+                            </div>
+                        </aside>
+                        <div class="account__wrapper account__wrapper--active" id="0" data-aos="fade">
+                            <table class="account__table account-table account-table--orders" border="0">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                </tr>
+                                <tr>
+                                    <td>351314121</td>
+                                    <td>Name of Product</td>
+                                    <td>$999</td>
+                                    <td class="account-table__progress">in progress</td>
+                                </tr>
+                                <tr>
+                                    <td>351314121</td>
+                                    <td>Name of Product</td>
+                                    <td>$999</td>
+                                    <td class="account-table__progress">in progress</td>
+                                </tr>
+                                <tr>
+                                    <td>351314121</td>
+                                    <td>Name of Product</td>
+                                    <td>$999</td>
+                                    <td class="account-table__progress">in progress</td>
+                                </tr>
+                                <tr>
+                                    <td>351314121</td>
+                                    <td>Name of Product</td>
+                                    <td>$999</td>
+                                    <td class="account-table__progress">in progress</td>
+                                </tr>
+                                <tr>
+                                    <td>351314121</td>
+                                    <td>Name of Product</td>
+                                    <td>$999</td>
+                                    <td class="account-table__progress">in progress</td>
+                                </tr>
+                                <tr>
+                                    <td>351314121</td>
+                                    <td>Name of Product</td>
+                                    <td>$999</td>
+                                    <td class="account-table__progress">in progress</td>
+                                </tr>
+                                <tr>
+                                    <td>351314121</td>
+                                    <td>Name of Product</td>
+                                    <td>$999</td>
+                                    <td class="account-table__progress">in progress</td>
+                                </tr>
+                                <tr>
+                                    <td>351314121</td>
+                                    <td>Name of Product</td>
+                                    <td>$999</td>
+                                    <td class="account-table__progress">in progress</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="account__wrapper" id="1" data-aos="fade">
+                            <table class="account__table account-table account-table--history" border="0">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Product</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                </tr>
+                                <tr>
+                                    <td>351314121</td>
+                                    <td>Name of Product</td>
+                                    <td>24 Sep 2023</td>
+                                    <td class="account-table__complete">complete</td>
+                                </tr>
+                                <tr>
+                                    <td>351314121</td>
+                                    <td>Name of Product</td>
+                                    <td>24 Sep 2023</td>
+                                    <td class="account-table__complete">complete</td>
+                                </tr>
+                                <tr>
+                                    <td>351314121</td>
+                                    <td>Name of Product</td>
+                                    <td>24 Sep 2023</td>
+                                    <td class="account-table__complete">complete</td>
+                                </tr>
+                                <tr>
+                                    <td>351314121</td>
+                                    <td>Name of Product</td>
+                                    <td>24 Sep 2023</td>
+                                    <td class="account-table__complete">complete</td>
+                                </tr>
+                                <tr>
+                                    <td>351314121</td>
+                                    <td>Name of Product</td>
+                                    <td>24 Sep 2023</td>
+                                    <td class="account-table__complete">complete</td>
+                                </tr>
+                                <tr>
+                                    <td>351314121</td>
+                                    <td>Name of Product</td>
+                                    <td>24 Sep 2023</td>
+                                    <td class="account-table__complete">complete</td>
+                                </tr>
+                                <tr>
+                                    <td>351314121</td>
+                                    <td>Name of Product</td>
+                                    <td>24 Sep 2023</td>
+                                    <td class="account-table__complete">complete</td>
+                                </tr>
+                                <tr>
+                                    <td>351314121</td>
+                                    <td>Name of Product</td>
+                                    <td>24 Sep 2023</td>
+                                    <td class="account-table__complete">complete</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="account__wrapper" id="2" data-aos="fade">
+                            <form class="account__settings account-settings" action="#">
+                                <div class="account-settings__inner">
+                                    <div class="account-settings__item account-settings-item">
+                                        <p class="account-settings-item__text">
+                                            Name
+                                        </p>
+                                        <div class="account-settings-item__box">
+                                            <div class="account-settings-item__box-wrapper">
+                                                <input class="account-settings-item__box-input" type="text" value="Sergei Ivanov">
+                                                <button class="account-settings-item__box-btn account-settings-item__box-btn--name" type="button">
+                                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M0 14.4624V17.5024C0 17.7824 0.22 18.0024 0.5 18.0024H3.54C3.67 18.0024 3.8 17.9524 3.89 17.8524L14.81 6.94244L11.06 3.19244L0.15 14.1024C0.0500001 14.2024 0 14.3224 0 14.4624ZM17.71 4.04244C17.8027 3.94993 17.8762 3.84004 17.9264 3.71907C17.9766 3.59809 18.0024 3.46841 18.0024 3.33744C18.0024 3.20648 17.9766 3.07679 17.9264 2.95582C17.8762 2.83485 17.8027 2.72496 17.71 2.63244L15.37 0.292444C15.2775 0.19974 15.1676 0.126193 15.0466 0.0760114C14.9257 0.02583 14.796 0 14.665 0C14.534 0 14.4043 0.02583 14.2834 0.0760114C14.1624 0.126193 14.0525 0.19974 13.96 0.292444L12.13 2.12244L15.88 5.87244L17.71 4.04244Z"
+                                                            fill="#46DF83" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="account-settings__item account-settings-item">
+                                        <p class="account-settings-item__text">
+                                            Email
+                                        </p>
+                                        <div class="account-settings-item__box">
+                                            <div class="account-settings-item__box-wrapper">
+                                                <input class="account-settings-item__box-input" type="text" value="email-example@gmail.com">
+                                                <button class="account-settings-item__box-btn account-settings-item__box-btn--mail" type="button">
+                                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M0 14.4624V17.5024C0 17.7824 0.22 18.0024 0.5 18.0024H3.54C3.67 18.0024 3.8 17.9524 3.89 17.8524L14.81 6.94244L11.06 3.19244L0.15 14.1024C0.0500001 14.2024 0 14.3224 0 14.4624ZM17.71 4.04244C17.8027 3.94993 17.8762 3.84004 17.9264 3.71907C17.9766 3.59809 18.0024 3.46841 18.0024 3.33744C18.0024 3.20648 17.9766 3.07679 17.9264 2.95582C17.8762 2.83485 17.8027 2.72496 17.71 2.63244L15.37 0.292444C15.2775 0.19974 15.1676 0.126193 15.0466 0.0760114C14.9257 0.02583 14.796 0 14.665 0C14.534 0 14.4043 0.02583 14.2834 0.0760114C14.1624 0.126193 14.0525 0.19974 13.96 0.292444L12.13 2.12244L15.88 5.87244L17.71 4.04244Z"
+                                                            fill="#46DF83" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <button class="account-settings-item__box-button account-settings-item__box-button--verify-mail" type="button">
+                                                Verify mail
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="account-settings__item account-settings-item">
+                                        <p class="account-settings-item__text">
+                                            Password
+                                        </p>
+                                        <div class="account-settings-item__box">
+                                            <button class="account-settings-item__box-button account-settings-item__box-button--password" type="button">
+                                                Change password
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="account-settings__buttons">
+                                    <button class="account-settings__buttons-del" type="button">
+                                        Delete account
+                                    </button>
+                                    <button class="account-settings__buttons-button btn" type="submit">
+                                        Save changes
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section class="popup popup--login">
+            <div class="popup__inner">
+                <button class="popup__close" type="button">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.4557 16.1502L10.276 8.97056L17.4557 1.79089C17.6288 1.61778 17.7261 1.383 17.7261 1.13819C17.7261 0.893384 17.6288 0.658601 17.4557 0.485495C17.2826 0.312389 17.0478 0.215138 16.803 0.215138C16.5582 0.215138 16.3234 0.312389 16.1503 0.485495L8.97064 7.66517L1.79097 0.485494C1.61786 0.312388 1.38308 0.215138 1.13827 0.215138C0.893464 0.215138 0.658682 0.312388 0.485576 0.485494C0.397527 0.567101 0.327994 0.666634 0.281663 0.777385C0.235332 0.888135 0.213278 1.00753 0.216989 1.12752C0.2207 1.24752 0.25009 1.36532 0.303177 1.473C0.356264 1.58067 0.431814 1.67572 0.524737 1.75173L7.70441 8.9314L0.485576 16.1502C0.312469 16.3233 0.215218 16.5581 0.215219 16.8029C0.215218 17.0477 0.31247 17.2825 0.485576 17.4556C0.658682 17.6287 0.893463 17.726 1.13827 17.726C1.38308 17.726 1.61786 17.6287 1.79097 17.4556L8.97064 10.276L16.1503 17.4556C16.3234 17.6287 16.5582 17.726 16.803 17.726C17.0478 17.726 17.2826 17.6287 17.4557 17.4556C17.6288 17.2825 17.7261 17.0477 17.7261 16.8029C17.7261 16.5581 17.6288 16.3233 17.4557 16.1502Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <h2 class="popup__title">
+                    Log In
+                </h2>
+                <form class="popup__form popup-form" action="#" method="post">
+                    <div class="popup-form__wrapper">
+                        <input class="popup-form__input" type="text" placeholder="Email" required>
+                        <input class="popup-form__input" type="email" placeholder="Password" required>
+                    </div>
+                    <button class="popup-form__btn popup-form__btn--forgot" type="button">
+                        Forgot the password?
+                    </button>
+                    <div class="popup-form__buttons">
+                        <button class="popup-form__buttons-btn popup-btn--close btn--green" type="submit">
+                            Log In
+                        </button>
+                        <button class="popup-form__buttons-btn popup-form__buttons-btn--reg btn" type="button">
+                            Register
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="popup popup--reg">
+            <div class="popup__inner">
+                <button class="popup__close" type="button">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.4557 16.1502L10.276 8.97056L17.4557 1.79089C17.6288 1.61778 17.7261 1.383 17.7261 1.13819C17.7261 0.893384 17.6288 0.658601 17.4557 0.485495C17.2826 0.312389 17.0478 0.215138 16.803 0.215138C16.5582 0.215138 16.3234 0.312389 16.1503 0.485495L8.97064 7.66517L1.79097 0.485494C1.61786 0.312388 1.38308 0.215138 1.13827 0.215138C0.893464 0.215138 0.658682 0.312388 0.485576 0.485494C0.397527 0.567101 0.327994 0.666634 0.281663 0.777385C0.235332 0.888135 0.213278 1.00753 0.216989 1.12752C0.2207 1.24752 0.25009 1.36532 0.303177 1.473C0.356264 1.58067 0.431814 1.67572 0.524737 1.75173L7.70441 8.9314L0.485576 16.1502C0.312469 16.3233 0.215218 16.5581 0.215219 16.8029C0.215218 17.0477 0.31247 17.2825 0.485576 17.4556C0.658682 17.6287 0.893463 17.726 1.13827 17.726C1.38308 17.726 1.61786 17.6287 1.79097 17.4556L8.97064 10.276L16.1503 17.4556C16.3234 17.6287 16.5582 17.726 16.803 17.726C17.0478 17.726 17.2826 17.6287 17.4557 17.4556C17.6288 17.2825 17.7261 17.0477 17.7261 16.8029C17.7261 16.5581 17.6288 16.3233 17.4557 16.1502Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <h2 class="popup__title">
+                    Registration
+                </h2>
+                <form class="popup__form popup-form" action="#" method="post">
+                    <div class="popup-form__wrapper">
+                        <input class="popup-form__input" type="text" placeholder="Name" required>
+                        <input class="popup-form__input" type="email" placeholder="Email" required>
+                        <input class="popup-form__input" type="password" placeholder="Password" required>
+                        <input class="popup-form__input" type="password" placeholder="Confirm password" required>
+                    </div>
+                    <div class="popup-form__buttons">
+                        <button class="popup-form__buttons-btn popup-btn--close btn--green" type="submit">
+                            Register
+                        </button>
+                    </div>
+                </form>
+                <p class="popup__text">
+                    Have an account?
+                    <button class="popup__text-btn popup__text-btn--log" type="button">
+                        Log In
+                    </button>
+                </p>
+            </div>
+        </section>
+        <section class="popup popup--restore-password">
+            <div class="popup__inner">
+                <button class="popup__close" type="button">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.4557 16.1502L10.276 8.97056L17.4557 1.79089C17.6288 1.61778 17.7261 1.383 17.7261 1.13819C17.7261 0.893384 17.6288 0.658601 17.4557 0.485495C17.2826 0.312389 17.0478 0.215138 16.803 0.215138C16.5582 0.215138 16.3234 0.312389 16.1503 0.485495L8.97064 7.66517L1.79097 0.485494C1.61786 0.312388 1.38308 0.215138 1.13827 0.215138C0.893464 0.215138 0.658682 0.312388 0.485576 0.485494C0.397527 0.567101 0.327994 0.666634 0.281663 0.777385C0.235332 0.888135 0.213278 1.00753 0.216989 1.12752C0.2207 1.24752 0.25009 1.36532 0.303177 1.473C0.356264 1.58067 0.431814 1.67572 0.524737 1.75173L7.70441 8.9314L0.485576 16.1502C0.312469 16.3233 0.215218 16.5581 0.215219 16.8029C0.215218 17.0477 0.31247 17.2825 0.485576 17.4556C0.658682 17.6287 0.893463 17.726 1.13827 17.726C1.38308 17.726 1.61786 17.6287 1.79097 17.4556L8.97064 10.276L16.1503 17.4556C16.3234 17.6287 16.5582 17.726 16.803 17.726C17.0478 17.726 17.2826 17.6287 17.4557 17.4556C17.6288 17.2825 17.7261 17.0477 17.7261 16.8029C17.7261 16.5581 17.6288 16.3233 17.4557 16.1502Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <h2 class="popup__title">
+                    Restore password
+                </h2>
+                <form class="popup__form popup-form" action="#" method="post">
+                    <div class="popup-form__wrapper">
+                        <input class="popup-form__input" type="email" placeholder="Email" required>
+                    </div>
+                    <div class="popup-form__buttons">
+                        <button class="popup-form__buttons-btn popup-form__buttons-btn--restore btn--green" type="submit">
+                            Restore Password
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="popup popup--email-sent">
+            <div class="popup__inner">
+                <button class="popup__close" type="button">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.4557 16.1502L10.276 8.97056L17.4557 1.79089C17.6288 1.61778 17.7261 1.383 17.7261 1.13819C17.7261 0.893384 17.6288 0.658601 17.4557 0.485495C17.2826 0.312389 17.0478 0.215138 16.803 0.215138C16.5582 0.215138 16.3234 0.312389 16.1503 0.485495L8.97064 7.66517L1.79097 0.485494C1.61786 0.312388 1.38308 0.215138 1.13827 0.215138C0.893464 0.215138 0.658682 0.312388 0.485576 0.485494C0.397527 0.567101 0.327994 0.666634 0.281663 0.777385C0.235332 0.888135 0.213278 1.00753 0.216989 1.12752C0.2207 1.24752 0.25009 1.36532 0.303177 1.473C0.356264 1.58067 0.431814 1.67572 0.524737 1.75173L7.70441 8.9314L0.485576 16.1502C0.312469 16.3233 0.215218 16.5581 0.215219 16.8029C0.215218 17.0477 0.31247 17.2825 0.485576 17.4556C0.658682 17.6287 0.893463 17.726 1.13827 17.726C1.38308 17.726 1.61786 17.6287 1.79097 17.4556L8.97064 10.276L16.1503 17.4556C16.3234 17.6287 16.5582 17.726 16.803 17.726C17.0478 17.726 17.2826 17.6287 17.4557 17.4556C17.6288 17.2825 17.7261 17.0477 17.7261 16.8029C17.7261 16.5581 17.6288 16.3233 17.4557 16.1502Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <p class="popup__message">
+                    An email has been sent to you
+                    to reset your password.
+                </p>
+                <button class="popup__btn popup-btn--close btn--green" type="button">
+                    OK thank you!
+                </button>
+            </div>
+        </section>
+        <section class="popup popup--review">
+            <div class="popup__inner">
+                <button class="popup__close" type="button">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.4557 16.1502L10.276 8.97056L17.4557 1.79089C17.6288 1.61778 17.7261 1.383 17.7261 1.13819C17.7261 0.893384 17.6288 0.658601 17.4557 0.485495C17.2826 0.312389 17.0478 0.215138 16.803 0.215138C16.5582 0.215138 16.3234 0.312389 16.1503 0.485495L8.97064 7.66517L1.79097 0.485494C1.61786 0.312388 1.38308 0.215138 1.13827 0.215138C0.893464 0.215138 0.658682 0.312388 0.485576 0.485494C0.397527 0.567101 0.327994 0.666634 0.281663 0.777385C0.235332 0.888135 0.213278 1.00753 0.216989 1.12752C0.2207 1.24752 0.25009 1.36532 0.303177 1.473C0.356264 1.58067 0.431814 1.67572 0.524737 1.75173L7.70441 8.9314L0.485576 16.1502C0.312469 16.3233 0.215218 16.5581 0.215219 16.8029C0.215218 17.0477 0.31247 17.2825 0.485576 17.4556C0.658682 17.6287 0.893463 17.726 1.13827 17.726C1.38308 17.726 1.61786 17.6287 1.79097 17.4556L8.97064 10.276L16.1503 17.4556C16.3234 17.6287 16.5582 17.726 16.803 17.726C17.0478 17.726 17.2826 17.6287 17.4557 17.4556C17.6288 17.2825 17.7261 17.0477 17.7261 16.8029C17.7261 16.5581 17.6288 16.3233 17.4557 16.1502Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <h2 class="popup__title">
+                    Add a review
+                </h2>
+                <form class="popup__form popup-form" action="#" method="post">
+                    <div class="popup-form__wrapper">
+                        <textarea class="popup-form__textarea" name="" id="" cols="30" rows="10"
+                            placeholder="Your message"></textarea>
+                    </div>
+                    <div class="popup-form__buttons">
+                        <button class="popup-form__buttons-btn popup-btn--close btn--green" type="submit">
+                            Add
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="popup popup--new-password">
+            <div class="popup__inner">
+                <button class="popup__close" type="button">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.4557 16.1502L10.276 8.97056L17.4557 1.79089C17.6288 1.61778 17.7261 1.383 17.7261 1.13819C17.7261 0.893384 17.6288 0.658601 17.4557 0.485495C17.2826 0.312389 17.0478 0.215138 16.803 0.215138C16.5582 0.215138 16.3234 0.312389 16.1503 0.485495L8.97064 7.66517L1.79097 0.485494C1.61786 0.312388 1.38308 0.215138 1.13827 0.215138C0.893464 0.215138 0.658682 0.312388 0.485576 0.485494C0.397527 0.567101 0.327994 0.666634 0.281663 0.777385C0.235332 0.888135 0.213278 1.00753 0.216989 1.12752C0.2207 1.24752 0.25009 1.36532 0.303177 1.473C0.356264 1.58067 0.431814 1.67572 0.524737 1.75173L7.70441 8.9314L0.485576 16.1502C0.312469 16.3233 0.215218 16.5581 0.215219 16.8029C0.215218 17.0477 0.31247 17.2825 0.485576 17.4556C0.658682 17.6287 0.893463 17.726 1.13827 17.726C1.38308 17.726 1.61786 17.6287 1.79097 17.4556L8.97064 10.276L16.1503 17.4556C16.3234 17.6287 16.5582 17.726 16.803 17.726C17.0478 17.726 17.2826 17.6287 17.4557 17.4556C17.6288 17.2825 17.7261 17.0477 17.7261 16.8029C17.7261 16.5581 17.6288 16.3233 17.4557 16.1502Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <h2 class="popup__title">
+                    New password
+                </h2>
+                <form class="popup__form popup-form" action="#" method="post">
+                    <div class="popup-form__wrapper">
+                        <input class="popup-form__input" type="password" placeholder="New password" required>
+                        <input class="popup-form__input" type="password" placeholder="Confirm password" required>
+                    </div>
+                    <div class="popup-form__buttons">
+                        <button class="popup-form__buttons-btn popup-btn--close btn--green" type="submit">
+                            Confirm
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer class="footer" data-aos="fade-up">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__logo logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
+                    <p class="footer__copy">
+                        © 2023. Proper Trade. All rights reserved
+                    </p>
+                    <a class="footer__link" href="#">
+                        Terms and Conditions
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
